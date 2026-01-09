@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ravindranath Dewangan | Flutter Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar">
+        <div class="logo">RaviDev</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="section hero">
+        <div class="glass">
+            <h1>Ravindranath Dewangan</h1>
+            <h2>Flutter App Developer</h2>
+            <p>Building beautiful & scalable apps 🚀</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p class="sub">
+            Flutter developer building Android, Windows & Web apps with clean UI,
+            performance-focused and scalable architecture.
+        </p>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section dark">
+        <h2>Skills</h2>
+        <div class="cards">
+            <div class="card">Flutter</div>
+            <div class="card">Dart</div>
+            <div class="card">Firebase</div>
+            <div class="card">MySQL</div>
+            <div class="card">Provider</div>
+            <div class="card">REST API</div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="cards">
+            <!-- <div class="project-card">
+                <h3>MoneyMeter</h3>
+                <p>Expense tracker with charts & MySQL backend</p>
+            </div> -->
+            <a href="https://play.google.com/store/apps/details?id=com.cashmate.app" target="_blank"
+                class="project-card-link">
+                <div class="project-card">
+                    <h3>CashMate</h3>
+                    <p>Cash counting utility app</p>
+                </div>
+            </a>
+
+            <a href="https://play.google.com/store/apps/details?id=com.picpixl.app" target="_blank"
+                class="project-card-link">
+                <div class="project-card">
+                    <h3>PicPixl</h3>
+                    <p>Image sharing app</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section dark">
+        <h2>Contact</h2>
+        <p>Email: ravi.dewangen@email.com</p>
+        <!-- <p>WhatsApp: +91-9589568986</p> -->
+    </section>
+
+    <footer>
+        © 2026 Ravindranath Dewangan
+    </footer>
+
+    <!-- ============ JS ============ -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("show");
+            document.getElementById("body").classList.toggle("menu-open");
+        }
+
+        function closeMenu() {
+            document.getElementById("navLinks").classList.remove("show");
+            document.getElementById("body").classList.remove("menu-open");
+        }
+    </script>
+
+</body>
+
+</html>
